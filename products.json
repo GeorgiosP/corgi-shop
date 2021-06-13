@@ -1,0 +1,23 @@
+[
+  {
+    "id": "prod_JfLBRwOgPHZ1Wj",
+    "title": "Corgi Tee",
+    "description": "Show off this adorable corgi with an amazing tee.",
+    "image": "/images/corgi-shirt.png",
+    "price": "$30.00"
+  },
+  {
+    "id": "prod_JfLDEK0y3fCeCP",
+    "title": "Corgi Stickers",
+    "description": "Add some flair to your laptop with some corgi stickers.",
+    "image": "/images/corgi-sticker-large.png",
+    "price": "$5.00"
+  },
+  {
+    "id": "prod_JfLEXlPTE9kGNL",
+    "title": "Corgi Combo",
+    "description": "Show your love for corgis with a corgi tee and sticker combo pack!",
+    "image": "/images/corgi-shirt-combo.png",
+    "price": "$32.50"
+  }
+]

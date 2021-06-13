@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import products from "../products.json";
 
 export default function Home() {
   return (
@@ -17,36 +18,16 @@ export default function Home() {
         <p className={styles.description}>Welcome to the corgi shop</p>
 
         <ul className={styles.grid}>
-          <li className={styles.card}>
-            <a href="https://nextjs.org/docs">
-              <img src="/images/corgi-shirt.png" alt="corgi tshirt" />
-              <h2>Corgi Tee</h2>
-              <p>$30.00</p>
-              <p>Show off this adorable corgi with an amazing tee.</p>
-            </a>
-          </li>
-          <li className={styles.card}>
-            <a href="https://nextjs.org/learn">
-              <img src="/images/corgi-sticker-large.png" alt="corgi sticker" />
-              <h2>Corgi stickers</h2>
-              <p>$5.00</p>
-              <p>Add some flair to your laptop with some corgi stickers.</p>
-            </a>
-          </li>
-          <li className={styles.card}>
-            <a href="https://github.com/vercel/next.js/tree/master/examples">
-              <img
-                src="/images/corgi-shirt-combo.png"
-                alt="corgi tshirt and sticker combo"
-              />
-              <h2>Corgi Combo</h2>
-              <p>$32.50</p>
-              <p>
-                Show your love for corgis with a corgi tee and sticker combo
-                pack!
-              </p>
-            </a>
-          </li>
+          {products.map((product) => (
+            <li key={product.id} className={styles.card}>
+              <a href="https://nextjs.org/docs">
+                <img src={product.image} alt={product.title} />
+                <h2>{product.title}</h2>
+                <p>{product.price}</p>
+                <p>{product.description}</p>
+              </a>
+            </li>
+          ))}
         </ul>
       </main>
 
