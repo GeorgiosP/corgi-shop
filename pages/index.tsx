@@ -19,31 +19,32 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <img src="/images/corgi-shirt.png" alt="corgi tshirt" />
-            <h2>Corgi Tee</h2>
-            <p>Show your corgi love with this amazing tee.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <img src="/images/corgi-sticker-large.png" alt="corgi sticker" />
-            <h2>Corgi stickers</h2>
-            <p>Can never go wrong with a corgi sticker!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <img
-              src="/images/corgi-shirt-combo.png"
-              alt="corgi tshirt and sticker combo"
-            />
-            <h2>Corgi Combo</h2>
-            <p>Why choose one?! have both today!</p>
-          </a>
-        </div>
+        <ul className={styles.grid}>
+          <li className={styles.card}>
+            <a href="https://nextjs.org/docs">
+              <img src="/images/corgi-shirt.png" alt="corgi tshirt" />
+              <h2>Corgi Tee</h2>
+              <p>Show your corgi love with this amazing tee.</p>
+            </a>
+          </li>
+          <li className={styles.card}>
+            <a href="https://nextjs.org/learn">
+              <img src="/images/corgi-sticker-large.png" alt="corgi sticker" />
+              <h2>Corgi stickers</h2>
+              <p>Can never go wrong with a corgi sticker!</p>
+            </a>
+          </li>
+          <li className={styles.card}>
+            <a href="https://github.com/vercel/next.js/tree/master/examples">
+              <img
+                src="/images/corgi-shirt-combo.png"
+                alt="corgi tshirt and sticker combo"
+              />
+              <h2>Corgi Combo</h2>
+              <p>Why choose one?! have both today!</p>
+            </a>
+          </li>
+        </ul>
       </main>
 
       <footer className={styles.footer}>
