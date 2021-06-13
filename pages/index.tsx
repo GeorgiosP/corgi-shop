@@ -28,7 +28,14 @@ export default function Home() {
                 <p>{product.description}</p>
               </a>
               <p>
-                <button className={styles.button} onClick={initiateCheckout}>
+                <button
+                  className={styles.button}
+                  onClick={() =>
+                    initiateCheckout({
+                      lineItems: [{ price: product.id, quantity: 1 }],
+                    })
+                  }
+                >
                   Buy now
                 </button>
               </p>
