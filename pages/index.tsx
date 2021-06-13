@@ -20,12 +20,15 @@ export default function Home() {
         <ul className={styles.grid}>
           {products.map((product) => (
             <li key={product.id} className={styles.card}>
-              <a href="https://nextjs.org/docs">
+              <a href="#">
                 <img src={product.image} alt={product.title} />
                 <h2>{product.title}</h2>
                 <p>{product.price}</p>
                 <p>{product.description}</p>
               </a>
+              <p>
+                <button className={styles.button}>Buy now</button>
+              </p>
             </li>
           ))}
         </ul>
