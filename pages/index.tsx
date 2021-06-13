@@ -6,18 +6,15 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>My Corgi Shop</title>
+        <title>Corgi Shop</title>
         <meta name="description" content="My Corgi Shop" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>My Store</h1>
+        <h1 className={styles.title}>Corgi Shop</h1>
 
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <p className={styles.description}>Welcome to the corgi shop</p>
 
         <ul className={styles.grid}>
           <li className={styles.card}>
